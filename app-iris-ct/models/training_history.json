@@ -1,0 +1,88 @@
+[
+  {
+    "version": "v1.0-base",
+    "trained_at": "2026-03-06T18:03:13.304426Z",
+    "accuracy": 0.9667,
+    "f1_scores": [
+      1.0,
+      0.9474,
+      0.9524
+    ],
+    "n_training_samples": 120,
+    "algorithm": "LogisticRegression",
+    "source": "bootstrap (iris dataset completo)",
+    "activated": true
+  },
+  {
+    "version": "v2.0-834e0b",
+    "trained_at": "2026-03-06T18:08:46.530394Z",
+    "accuracy": 1.0,
+    "f1_scores": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_training_samples": 5,
+    "algorithm": "LogisticRegression",
+    "source": "desde cero (5 muestras)",
+    "eval_note": "evaluaci\u00f3n en train (dataset peque\u00f1o, < 20 muestras)",
+    "status": "activado",
+    "activated": true,
+    "policy_used": "any_improvement",
+    "reason": "Policy any_improvement: Accuracy 1.0000 >= 0.9667"
+  },
+  {
+    "version": "v3.0-935158",
+    "trained_at": "2026-03-06T18:09:12.690819Z",
+    "accuracy": 1.0,
+    "f1_scores": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_training_samples": 10,
+    "algorithm": "LogisticRegression",
+    "source": "incremental (+5 muestras nuevas, 5 anteriores)",
+    "eval_note": "evaluaci\u00f3n en train (dataset peque\u00f1o, < 20 muestras)",
+    "status": "rechazado",
+    "activated": false,
+    "policy_used": "min_delta",
+    "reason": "Modelo NO activado. Policy min_delta: Mejora 0.0000 >= 0.0001. El modelo activo se mantiene sin cambios."
+  },
+  {
+    "version": "v4.0-6942e7",
+    "trained_at": "2026-03-06T18:09:21.271129Z",
+    "accuracy": 1.0,
+    "f1_scores": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_training_samples": 10,
+    "algorithm": "LogisticRegression",
+    "source": "incremental (+5 muestras nuevas, 5 anteriores)",
+    "eval_note": "evaluaci\u00f3n en train (dataset peque\u00f1o, < 20 muestras)",
+    "status": "rechazado",
+    "activated": false,
+    "policy_used": "min_delta",
+    "reason": "Modelo NO activado. Policy min_delta: Mejora 0.0000 >= 0.5. El modelo activo se mantiene sin cambios."
+  },
+  {
+    "version": "v5.0-7a207e",
+    "trained_at": "2026-03-06T18:09:42.317065Z",
+    "accuracy": 1.0,
+    "f1_scores": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "n_training_samples": 10,
+    "algorithm": "LogisticRegression",
+    "source": "incremental (+5 muestras nuevas, 5 anteriores)",
+    "eval_note": "evaluaci\u00f3n en train (dataset peque\u00f1o, < 20 muestras)",
+    "status": "rechazado",
+    "activated": false,
+    "policy_used": "per_class_f1",
+    "reason": "Modelo NO activado. Policy per_class_f1 (clase 1): 1.0000 > 1.0000. El modelo activo se mantiene sin cambios."
+  }
+]
